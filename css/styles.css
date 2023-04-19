@@ -3,6 +3,10 @@
   --primary-background: #ffffff;
   --second-title-background: #2e2f42;
   --button-background-color: #4d5ae5;
+  --feature-icons-background: #f4f4fd;
+  --icon-background: #4d5ae5;
+  --icon-fill: #f4f4fd;
+  --icon-hover-bacground: #404bbf;
 }
 
 body {
@@ -100,8 +104,19 @@ img {
   padding-bottom: 188px;
   margin-left: auto;
   margin-right: auto;
+  height: 600px;
+  max-width: 1440px;
 
   background: var(--second-title-background);
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero/people-office.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -177,6 +192,17 @@ img {
   margin-right: 24px;
 }
 
+.feature-icons {
+  display: block;
+  width: 264px;
+  height: 112px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  background-color: var(--feature-icons-background);
+  border-radius: 4px;
+}
+
 /* What are we doing */
 
 .wawd-section {
@@ -239,6 +265,7 @@ img {
 
 .team-job {
   text-align: center;
+  margin-bottom: 8px;
 
   font-size: 16px;
   line-height: 24px;
@@ -264,6 +291,39 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-social-network {
+  display: flex;
+  border-radius: 50%;
+  list-style: none;
+  justify-content: center;
+}
+
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  fill: var(--icon-fill);
+  border-radius: 50%;
+  background-color: var(--icon-background);
+}
+
+.team-social-network > .item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.team-social-network > .item {
+  width: 40px;
+  height: 40px;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--icon-hover-bacground);
 }
 
 /* Footer */
