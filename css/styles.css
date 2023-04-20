@@ -109,7 +109,6 @@ img {
 
   background: var(--second-title-background);
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -596,6 +595,7 @@ img {
 
 .portfolio-link-photo {
   display: block;
+  width: ((100% -72px)/3);
 }
 
 .portfolio-link-photo:hover,
