@@ -39,8 +39,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
-  outline: 2px solid red;
 }
 
 .list {
@@ -428,6 +426,11 @@ img {
 
 .footer-design:not(:last-child) {
   margin-right: 120px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--icon-hover-bacground);
 }
 
 /* Header */
