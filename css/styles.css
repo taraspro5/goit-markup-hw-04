@@ -7,6 +7,7 @@
   --icon-background: #4d5ae5;
   --icon-fill: #f4f4fd;
   --icon-hover-bacground: #404bbf;
+  --icon-company-background: #8e8f99;
 }
 
 body {
@@ -326,6 +327,56 @@ img {
   background-color: var(--icon-hover-bacground);
 }
 
+/* Customers */
+
+.customers-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.company-title {
+  text-align: center;
+  margin-bottom: 72px;
+
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--second-title-background);
+}
+
+.company-list {
+  display: flex;
+  justify-content: center;
+}
+
+.company-list > .item {
+  width: 168px;
+  height: 88px;
+}
+
+.company-list > .item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.company-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+
+  border: 1px solid var(--icon-company-background);
+  border-radius: 4px;
+  fill: var(--icon-company-background);
+}
+
+.company-link:hover,
+.company-link:focus {
+  fill: var(--icon-hover-bacground);
+  border: 1px solid var(--icon-hover-bacground);
+}
+
 /* Footer */
 
 .footer {
@@ -339,6 +390,44 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: #f4f4fd;
+}
+
+.footer-social-title {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-background);
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-link {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+
+  fill: var(--icon-fill);
+  background-color: var(--icon-background);
+  border-radius: 50%;
+}
+
+.footer-social-list > .item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footer-design:not(:last-child) {
+  margin-right: 120px;
 }
 
 /* Header */
@@ -485,6 +574,12 @@ img {
 
 .portfolio-photo:nth-child(-n + 6) {
   margin-bottom: 48px;
+}
+
+.portfolio-photo:hover,
+.portfolio-photo:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-title {
